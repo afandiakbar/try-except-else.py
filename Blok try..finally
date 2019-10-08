@@ -1,0 +1,17 @@
+def main () :
+  try :
+      # membuka file
+      f = open ("data.text", "w")
+      
+      try :
+          # menulis data ke file
+          f.write ("Programan Python")
+      finally :
+          f.close () # menutup file
+ except IOError:
+      print ("\nERROR: File tidak dapat " +
+             "dibuka/ditulis")
+             
+ 
+ if __name__ == "__main__" :
+    main()
